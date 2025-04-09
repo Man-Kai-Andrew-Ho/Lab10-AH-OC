@@ -1,12 +1,13 @@
+#https://github.com/Man-Kai-Andrew-Ho/Lab10-AH-OC
+#Partner 1 : Andrew Ho
+#Partner 2 : Oscar Cao
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
-#https://github.com/Man-Kai-Andrew-Ho/Lab10-AH-OC
-#Partner 1 : Andrew Ho
-#Partner 2 : Oscar Cao
+
 
 import math
 

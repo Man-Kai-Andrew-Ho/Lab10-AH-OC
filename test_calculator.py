@@ -1,8 +1,9 @@
-import unittest
-from calculator import *
 #https://github.com/Man-Kai-Andrew-Ho/Lab10-AH-OC
 #Partner 1 : Andrew Ho
 #Partner 2 : Oscar Cao
+import unittest
+from calculator import *
+
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
@@ -24,9 +25,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(100, 100), 10000)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(div(10, 2), 5)
-        self.assertAlmostEqual(div(100, -3), -33.33333)
-        self.assertEqual(div(10000, 5), 2000)
+        self.assertEqual(div(2, 5), 5)
+        self.assertAlmostEqual(div(-3, 100), -33.333333333)
+        self.assertEqual(div(5, 10000), 2000)
     # ##########################
 
     ######## Partner 2
@@ -57,9 +58,9 @@ class TestCalculator(unittest.TestCase):
             logarithm(0, 5)
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertAlmostEqual(hypotenuse(5,10), 11.18)
+        self.assertAlmostEqual(hypotenuse(5,10), 11.180339887498949)
         self.assertEqual(hypotenuse(3,4), 5)
-        self.assertAlmostEqual(hypotenuse(100, 123), 158.521)
+        self.assertAlmostEqual(hypotenuse(100, 123), 158.52129195)
 
     def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
@@ -69,7 +70,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             square_root(-1)
         self.assertEqual(square_root(1), 1)
-        self.assertAlmostEqual(square_root(1000), 31.62)
+        self.assertAlmostEqual(square_root(1000), 31.6227766)
         self.assertEqual(square_root(10000), 100)
     ##########################
 
