@@ -4,6 +4,10 @@ calculator.py
 
 One function per operation, in order.
 """
+#https://github.com/Man-Kai-Andrew-Ho/Lab10-AH-OC
+#Partner 1 : Andrew Ho
+#Partner 2 : Oscar Cao
+
 import math
 
 from xml.dom import VALIDATION_ERR
